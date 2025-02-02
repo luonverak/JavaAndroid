@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/white"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
-    android:padding="5dp">
+    android:padding="5dp"
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,13 +32,17 @@
             android:textSize="18sp"
             android:textStyle="bold" />
 
-        <include layout="@layout/badges" />
+
+        <include
+            android:id="@+id/cart"
+            layout="@layout/badges" />
 
     </LinearLayout>
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
         <GridLayout
             android:id="@+id/gridFood"
@@ -105,5 +112,10 @@
 
     </ScrollView>
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        app:menu="@menu/food_menu" />
 
 </LinearLayout>

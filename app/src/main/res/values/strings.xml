@@ -3,4 +3,8 @@
     <string name="activity_home">Activity home</string>
     <string name="welcome_to_android_development">Welcome to Android Development</string>
     <string name="our_menu">Our Menu</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="promotion">Promotion</string>
+    <string name="profile">Profile</string>
 </resources>
